@@ -1,3 +1,5 @@
+Opgave set fra udleveret repo:
+
 # Torsdagsopgave – Supermarked
 
 Torsdagsopgave om datastrukturer i Java.
