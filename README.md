@@ -47,3 +47,4 @@ Du bestemmer selv, hvordan du opdeler koden i pakker, klasser og metoder. Når k
 - **Sammenlign `ArrayList` og `LinkedList`.** Afprøv kasseapparatet med de samme varer i samme rækkefølge i begge lister. Hvilke operationer udfører kasseapparatet på kurven, og hvilken liste ville du vælge til dem? Begrund dit valg.
 - **Find antallet af forskellige varer med et `Set`.** Brug et `Set` med EAN-numre til at finde ud af, hvor mange forskellige varer kunden har købt. Kurven `[banan, mælk, banan]` indeholder tre varer, hvoraf to er forskellige. Hvis du allerede har brugt et `Map` til at tælle varerne, hvordan kan du så finde antallet af forskellige varer direkte fra det?
 - **Forklar dit valg af nøgle.** Hvorfor er EAN-nummeret en egnet nøgle, når du slår priser op og samler ens varer på bonen?# Torsdagsopgaver-7---Supermarked
+# Torsdagsopgaver-7---Supermarked
