@@ -1,0 +1,18 @@
+Spørgsmål 1: ArrayList eller LinkedList?
+Robotten er udleveret, og jeg kan se i koden at den laver kurven som en ArrayList.
+Kasseapparatet går bare kurven igennem fra start til slut: det tæller varerne, slår priser op og tjekker tilbud.
+Det henter ikke varer ved position og sætter ikke varer ind eller fjerner dem.
+Derfor vælger jeg ArrayList. Begge lister er lige hurtige at gå igennem, så LinkedList har ingen fordel, da den er god til at sætte ind og fjerne.
+ArrayList bruger desuden mindre hukommelse. Hvis jeg kopierer kurven over i en LinkedList, får jeg den samme bon.
+Som vi har lært fra timenerne med datastrukturer med Lina.
+
+Spørgsmål 2: antal forskellige varer
+Med et Set lægger jeg hver vares EAN i et HashSet. Det tillader ikke dubletter så size() giver antallet af forskellige varer. [banan, mælk, banan] giver 2.
+Hvis man allerede har et Map, er det ikke nødvendigt for en nøgle kan kun optræde én gang.
+Hver nøgle er én forskellig vare, så antal.size() giver svaret direkte.
+
+Spørgsmål 3: hvorfor er EAN en god nøgle?
+EAN er unikt for hver vare ligesom et CPR-nummer, og det ændrer sig ikke, selv om navn og pris gør.
+Det findes i både varer.csv og tilbud.csv, så ét opslag viser, om en vare er på tilbud.
+Det samler også ens varer: to bananer har samme EAN og bliver talt op på samme nøgle, uanset hvad der ligger imellem dem i kurven.
+Opslag i et HashMap er desuden hurtige, selv med over 17.000 varer.
